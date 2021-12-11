@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition: all 0.3s linear;
+}
+
+::selection{
+    color: #589CED;
+    background-color: #333;
+}
+
+html::-webkit-scrollbar{
+    width: .3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 7%;
+    padding-bottom: 80px;
+    max-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container .left-col{
+    flex: 1 1 300px;
+}
+
+.container .right-col{
+    flex: 1 1 300px;
+}
+
+.container .right-col img{
+    width: 90%;
+}
+
+.rect{
+    background-color: #589CED;
+    max-height: 500px;
+    width: 500px;
+}
+
+.header-container{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.header{
+    background-color: #589CED;
+    height: 15vh;
+    width: 30%;
+}
+
+.left-col .title{
+    font-size: 50px;
+    color: #589CED;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.left-col p{
+    color: #6666;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    background-color: #589CED;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 17px;
+}
+
+#menu-bars{
+    color: #333;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+
+.box{
+    max-width: 200px;
+    max-height: 200px;
+    background-color: #589CED;
+    margin-top: 30px;
+}
+
+.box img{
+    height: 200px;
+}
+
+.box-form{
+    width: 100%;
+    background-color: #589CED;
+    padding: 19px 7%;
+}
+.box-form Form{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+.box-form form .inputForm{
+    flex: 1 1 300px;
+}
+
+.box-form form .btn{
+    flex:  1 1 150px;
+}
+
+.box-form form input{
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px 25px;
+    margin-top: 1rem;
+}
+
+.box-form span{
+    color: #333;
+}
+
+.box-form .btn{
+    background-color: #333;
+    color: #589CED;
+}
+
+.header .navbar{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+   background-color: crimson;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10% 50%;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .navbar a{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 55px;
+    color: #f2f2f2;
+}
+
+.header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.header .navbar a:hover{
+    transform: scale(1.2);
+    color: #589CED;
+}
+
+#close-bars{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    font-size: 75px;
+}
+
+.journey{
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.journey .heading{
+    text-align: center;
+}
+
+.journey .heading span{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.journey .heading h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #589CED;
+    margin-bottom: 3rem;
+}
+
+
+.journey-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+
+.journey-container .journey-box{
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+
+.journey-container .journey-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.journey-container .journey-box span{
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: bolder;
+}
+
+
+.quote{
+    background-color: #589CED;
+    width: 100%;
+    padding: 2rem 6%;
+    text-align: center;
+}
+
+.quote img{
+    height: 120px;
+    border: .2rem solid crimson;
+    border-radius: 50%;
+
+}
+
+.quote p{
+    font-size: 2.1vw;
+}
+.quote span{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+@media (max-width: 1050px){
+    .journey-container{
+        width: 100%;
+    }
+    .journey-container .journey-box{
+        width: 70%;
+        height: 500px;
+    }
+
+    .journey-container .journey-box img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 948px){
+    .header{
+        width: 100%;
+        height: 8vh;
+    }
+
+    #menu-bars{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+
+    .container .right-col img{
+        width: 72%;
+    }
+
+    .box{
+        display: none;
+    }
+}
